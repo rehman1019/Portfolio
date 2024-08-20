@@ -1,6 +1,6 @@
-var tablinks = document.getElementsByClassName("tab-links")
-var tabcontents = document.getElementsByClassName("tab-contents")
-var sidemenu = document.getElementById("sidemenu")
+const tablinks = document.getElementsByClassName("tab-links")
+const tabcontents = document.getElementsByClassName("tab-contents")
+const sidemenu = document.getElementById("sidemenu")
 function opentab(tabname){
     for(tablink of tablinks){
         tablink.classList.remove("active-link");

@@ -33,7 +33,6 @@ nav{
 
 .logo{
     width: 200px;
-    height: 80%;
 }
 
 nav h2 span{
@@ -122,7 +121,8 @@ nav ul li a:hover::after{
 /* <----abou-section----!> */
 
 #about{
-    padding: 80px 0;
+    width: 100%;
+    /* height: 100vh; */
     color: #ababab;
 }
 
@@ -144,13 +144,18 @@ nav ul li a:hover::after{
 .about-left-sec img{
     width: 100%;
     height: 80vh;
-    border: 2px solid white;
-    box-shadow: 2px 2px 8px 2px #fff;
+    border: 1px solid white;
+    box-shadow: 2px 2px 8px #fff;
     border-radius: 15px;
+    background-color: #262626;
 }
 
 .about-right-sec{
     flex-basis: 60%;
+}
+
+.about-right-sec p{
+    font-weight: 550;
 }
 
 .sub-title{
@@ -194,14 +199,19 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 
+.skills-list{
+    margin: -20px 0;
+}
+
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .tab-contents{
     display: none;
 }
+
 
 .tab-contents.active-tab{
     display: block;
@@ -211,10 +221,10 @@ nav ul li a:hover::after{
     margin-bottom: 40px;
 }
 
-
 .contact-left{
     flex-basis: 35%;
 }
+
 .contact-right{
     flex-basis: 60%;
 }
@@ -310,11 +320,11 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px) {
     .hero-section{
-        margin-top: 70px;
+        margin-top: 20px;
     }
 
     .left-section{
-        margin-top: 50%;
+        margin-top: 40%;
         font-size: 16px;
     }
     .left-section h1{
@@ -352,6 +362,10 @@ nav .fa-solid{
      #about{
         padding: 0px;
      }
+
+     .about-left-sec img{
+        height: 50vh;
+     }
      .about-right-sec{
         margin-top: 30px;
      }
@@ -381,4 +395,9 @@ nav .fa-solid{
      #download-btn{
         margin-bottom: 30px;
      }
+     .copyright span{
+        color: #ff004f;
+        font-size: 12px;
+        margin: 0 5px;
+    }
 }
